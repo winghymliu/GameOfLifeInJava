@@ -18,7 +18,7 @@ public class GameOfLifeTests {
 		List<Position> positions = new ArrayList<Position>();
 		GameOfLife game = new GameOfLife(positions, size);
 		
-		int[][] board = game.Smear();
+		int[][] board = game.smear();
 		
 		for(int x =0; x < size; x++){
 			for(int y = 0 ; y < size; y++){
@@ -35,7 +35,7 @@ public class GameOfLifeTests {
 		
 		GameOfLife game = new GameOfLife(positions, size);
 		
-		int[][] board = game.Smear();
+		int[][] board = game.smear();
 		
 		for(int x =0; x < size; x++){
 			for(int y = 0 ; y < size; y++){
@@ -54,7 +54,7 @@ public class GameOfLifeTests {
 		List<Position> positions = Arrays.asList(posA);
 		GameOfLife game = new GameOfLife(positions, size);
 		
-		int[] [] board = game.Smear();
+		int[] [] board = game.smear();
 		int[] [] neighbourhood = game.getNeighbourhood(posA);
 		
 		for (int i = posA.getX() -1; i <= posA.getX()+1; i ++){
